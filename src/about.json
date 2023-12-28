@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Python",
+    "image": "svgs/python.svg",
+    "content": "Python is a very simple and readable language. I love writing code in Python."
+  },
+  {
+    "title": "JavaScript",
+    "image": "svgs/js.svg",
+    "content": "JavaScript was my first programming language. I feel very comfortable when it comes to working with JavaScript."
+  },
+  {
+    "title": "Django",
+    "image": "svgs/django.svg",
+    "content": "It is a very amazing framework. It is very handy, organized, and an advanced framework. Therefore, I mostly choose Django for backend stuff."
+  },
+  {
+    "title": "React",
+    "image": "svgs/react.svg",
+    "content": "The creation of Facebook is very beautiful. React is a very good choice for        writing the frontend of a web app. I feel very comfortable with it."
+  },
+  {
+    "title": "MongoDB",
+    "image": "svgs/mongo.svg",
+    "content": "MongoDB is very powerful and easy to use. I mostly choose MongoDB over any other database. I love it because of its schema-less nature."
+  },
+  {
+    "title": "HTML",
+    "image": "svgs/html.svg",
+    "content": "I mostly use HTML for Hacking purpose  (Just kidding)😉."
+  },
+  {
+    "title": "CSS",
+    "image": "svgs/css.svg",
+    "content": "As a backend developer, I still love to do styling in CSS."
+  },
+  {
+    "title": "Tailwind",
+    "image": "svgs/tailwind.svg",
+    "content": "A very beautiful framework for CSS. It increases my speed 2X during  styling."
+  },
+  {
+    "title": "Redux Toolkit",
+    "image": "svgs/redux.svg",
+    "content": "Redux Toolkit is a very beautiful library for state management. It helps a lot while dealing with complex stuff."
+  }
+]

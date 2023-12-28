@@ -1,0 +1,88 @@
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  backdrop-filter: blur(7px);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 40px;
+}
+.navbar {
+  display: flex;
+  gap: 3rem;
+  background: none;
+}
+.navbar_transparent {
+  display: flex;
+  gap: 3rem;
+  background: none !important;
+}
+.logo > .default > img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta a {
+  padding-bottom: 3px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.hover-underline-animation-dark {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+.hover-underline-animation-light {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+/*      */
+.hover-underline-animation-dark:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--maincolor_dark);
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-out;
+}
+.hover-underline-animation-light:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--maincolor_light);
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-out;
+}
+
+/*  */
+.cta:hover .hover-underline-animation-dark:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.cta:hover .hover-underline-animation-light:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 568px) {
+  .nav_container {
+    padding: 40px 0;
+  }
+}

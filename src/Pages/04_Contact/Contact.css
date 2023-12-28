@@ -1,0 +1,122 @@
+.parent_contact_container {
+  position: relative;
+  top: 7rem;
+  height: 85vh;
+  overflow: auto;
+}
+.term_conditions {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: acorn_bold;
+  font-size: 1.5rem;
+  background: #00000071;
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  color: aliceblue;
+  z-index: 9;
+  width: 100%;
+}
+.term_conditions:hover {
+  text-decoration: underline;
+}
+.term_conditions_icon {
+  font-size: 26px;
+  margin: 0 10px;
+  color: aliceblue;
+}
+
+.content_wrapper_contact {
+  height: 100%;
+  width: 100%;
+}
+.social_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 10px;
+  margin: auto;
+  margin-left: 20px;
+}
+.social_img {
+  flex: 1;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social_img > img {
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(2px 2px 16px #42424299);
+  width: 70%;
+}
+
+.social_icons {
+  flex: 1.5;
+  height: 74vh;
+  overflow: auto;
+}
+
+.icon_div {
+  margin: 0.8rem 1rem;
+  display: flex;
+  align-items: enter;
+  padding: 8px;
+}
+.icon_div .icon {
+  font-size: 80px;
+  margin-right: 2rem;
+}
+.icon_text {
+  user-select: none;
+  font-size: 3rem;
+  user-select: none;
+  font-family: acorn_bold;
+  transition: all 0.3s ease-in-out;
+}
+.icon_text:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
+}
+@media screen and (max-width: 1020px) {
+  .social_container {
+    flex-direction: column;
+  }
+  .social_img {
+    width: 100%;
+  }
+  .social_icons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .term_conditions > span {
+    font-size: 1rem;
+  }
+  .icon_div > a {
+    font-size: 2rem;
+  }
+  .icon_div > .icon {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .icon_div > a {
+    font-size: 1.1rem;
+  }
+  .icon_div > .icon {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .parent_contact_container {
+    visibility: hidden;
+    background: var(--dark_mode);
+  }
+}

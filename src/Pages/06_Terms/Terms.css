@@ -1,0 +1,75 @@
+.terms_parent_container {
+  height: 86.8vh;
+  position: relative;
+  top: 7rem;
+  overflow: auto;
+}
+.trms_conditons {
+  height: 5vh;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.8rem;
+  font-family: acorn_bold;
+  letter-spacing: 3px;
+}
+.terms_content_controller {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+}
+.div_1 {
+  flex: 1;
+  overflow: auto;
+  padding: 30px;
+}
+.div_2 {
+  flex: 0;
+}
+.header_txt {
+  font-family: acorn;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: justify;
+}
+.dark_green {
+  font-size: large;
+  font-family: acorn;
+  letter-spacing: 2px;
+}
+.header_txt > span {
+  font-size: 2rem;
+  font-family: acorn_bold;
+  font-style: italic;
+}
+.bolder {
+  font-family: acorn_bold;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-style: italic;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+.regular {
+  font-size: 1.5rem;
+  font-family: acorn;
+  text-align: start;
+  letter-spacing: 2px;
+  margin: 15px 0;
+}
+.txt_blue {
+  color: #43a4f8;
+}
+.txt_blue:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 468px) {
+  .regular {
+    font-size: 1rem;
+  }
+  .header_txt {
+    font-size: 1.1rem;
+  }
+}

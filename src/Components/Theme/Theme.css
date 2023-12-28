@@ -1,0 +1,18 @@
+.toggler_icon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.toggler_icon:hover {
+  background: #00000060;
+}
+.icon_moon {
+  color: #000;
+}
+.icon_sun {
+  color: var(--maincolor);
+}

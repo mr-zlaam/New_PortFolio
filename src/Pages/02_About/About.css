@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+.main_container_about {
+  height: 85vh;
+  position: relative;
+  top: 5.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+.info_about {
+  height: fit-content;
+  padding: 1rem;
+  width: 100%;
+}
+.expertise {
+  height: fit-content;
+  padding: 1rem;
+  width: 100%;
+}
+.who_am_i {
+  width: fit-content;
+  margin: auto;
+}
+.who_am_i > span {
+  font-size: 2.5rem;
+  font-family: acorn_bold;
+  letter-spacing: 3px;
+}
+.info_para {
+  padding: 0 2rem;
+}
+.info_para > span:nth-child(1) {
+  font-size: 2rem;
+  font-family: acorn_bold;
+  letter-spacing: 2px;
+}
+.info_para > span:nth-child(3) {
+  font-size: 1.3rem;
+}
+.date_wrapper {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.date > span {
+  font-size: 1.7rem;
+  font-family: acorn_bold;
+  letter-spacing: 2px;
+}
+.avail {
+  text-align: end;
+  width: 100%;
+  font-family: acorn;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/*  *? Expertise section begin*/
+
+.my_expertise {
+  font-size: 2rem;
+  font-family: acorn_bold;
+}
+
+.main_card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2rem;
+}
+.card {
+  position: relative;
+  user-select: none;
+  width: 1fr;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: auto;
+}
+.text_dark {
+  color: #ffffff;
+}
+.text_light {
+  color: var(--maincolor_light);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px #0000008f;
+}
+
+.card__content {
+  backdrop-filter: blur(15px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(-50%);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  font-family: acorn_bold;
+  margin: 0;
+  font-size: 18px;
+
+  font-weight: bolder;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.flex_container_about {
+  /* overflow: auto; */
+}
+
+@media screen and (max-width: 448px) {
+  .who_am_i > span {
+    font-size: 1.7rem;
+  }
+  .info_para {
+    padding: 0;
+  }
+  .info_para > span:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .date > span {
+    font-size: 1.4rem;
+  }
+  .avail {
+    text-align: start;
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .info_para > span:nth-child(3) {
+    font-size: 1rem;
+  }
+  .my_expertise {
+    font-size: 1.5rem;
+  }
+  .expertise {
+  }
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+  .main_container_about {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 258px) {
+  .main_container_about {
+    visibility: hidden;
+    background: var(--maincolor_dark);
+  }
+}
+@media screen and (max-width: 644px) {
+  .card_dark {
+    background: var(--dark_mode);
+  }
+  .card_light {
+    background: var(--light_mode);
+  }
+  .card {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: acorn;
+  src: url("../StyleComponents/MyFonts/Acorn-Regular.otf");
+}
+@font-face {
+  font-family: acorn_bold;
+  src: url("../StyleComponents/MyFonts/Acorn-Bold.otf");
+}
+
+.main_body_light {
+  background: var(--light_mode);
+  height: 100vh;
+  overflow: auto;
+  color: var(--maincolor_light);
+}
+.main_body_dark {
+  background: var(--dark_mode);
+  height: 100vh;
+  overflow: auto;
+  color: var(--maincolor_dark);
+}
+.default {
+  cursor: url("/cursor_svg/cursor.svg"), default;
+}
+.text_light {
+  color: var(--maincolor_light);
+}
+.text_dark {
+  color: var(--maincolor_dark);
+}
+.acorn {
+  font-family: "acorn", arial;
+}
+.acorn_bold {
+  font-family: "acorn_bold", arial;
+}
+.dark_mode {
+  background: var(--dark_mode);
+}
+.light_mode {
+  background: var(--light_mode);
+}
+html {
+  --maincolor_dark: #deedfa;
+  --maincolor_light: #28282b;
+  --dark_mode: linear-gradient(
+    to right bottom,
+    #001430,
+    #002640,
+    #00363b,
+    #004324,
+    #344c00
+  );
+  --light_mode: linear-gradient(
+    to right bottom,
+    #c2daff,
+    #e4f1ff,
+    #dcfdff,
+    #55f7ab,
+    #e7eed8
+  );
+}
+*::selection {
+  color: #5252529f;
+}
+a {
+  user-select: none;
+}

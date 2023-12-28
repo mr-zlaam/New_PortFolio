@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+.card_project_container {
+  height: 100%;
+  width: fit-content;
+  overflow: auto;
+  margin: auto;
+}
+
+.main_project_card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+.card_proj {
+  position: relative;
+  width: 380px;
+  height: 275px;
+  background-color: transparent;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 28px 20px;
+}
+
+.card_proj > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  border-radius: 20px;
+}
+
+.card_proj:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+}
+
+.cardcontent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translatex(-200%);
+  transform-origin: bottom;
+  backdrop-filter: blur(2px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.06);
+  overflow: hidden;
+}
+
+.card_proj:hover .cardcontent {
+  transform: translateX(0);
+}
+
+.cardtitle {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Fugaz One", sans-serif;
+}
+
+.card:hover img {
+  scale: 0;
+}
+
+.carddescription {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.4;
+  font-family: "Fugaz One", sans-serif;
+}
+
+.btn_div {
+  width: fit-content;
+  margin: auto;
+  position: absolute;
+  bottom: 1rem;
+  left: 6rem;
+}
+.btn_div > .btns {
+  border: 2px solid white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background: none;
+  transition: all 0.5s ease-in-out;
+  font-family: acorn;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.btn_div > .btns:hover {
+  background: #6d6dff;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  border-color: transparent;
+}
+.btn_link {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-family: "Fugaz One", sans-serif;
+}
+.link_icon {
+  margin-left: 0.4rem;
+  color: white;
+}
+.btn_link:hover {
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1190px) {
+  .main_project_card {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+@media screen and (max-width: 818px) {
+  .main_project_card {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+@media screen and (max-width: 446px) {
+  .btn_div {
+    left: 4.5rem;
+  }
+  .resume .resume_txt {
+    font-size: 1rem;
+  }
+  .resume .download_icon {
+    font-size: 1rem;
+  }
+  .main_project_card {
+    padding-left: 8px;
+  }
+  .carddescription {
+    font-size: 1rem;
+  }
+  .btn_link {
+    font-size: 0.7rem;
+  }
+  .card_proj {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+  }
+  .card_proj > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .card_proj {
+    width: 250px;
+    height: 150px;
+  }
+  .carddescription {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 295px) {
+  .btn_div {
+    height: 0px;
+    width: 100px;
+    bottom: 2rem;
+    left: 3rem;
+  }
+  .carddescription {
+    font-size: 12px;
+  }
+  .btn_link {
+    font-size: 7px;
+  }
+  .card_proj {
+    width: 80%;
+    height: 120px;
+    margin-left: 20px;
+  }
+}
