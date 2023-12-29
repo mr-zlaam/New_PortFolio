@@ -22,7 +22,7 @@ const About = () => {
           <div className="info_para">
             <span> Hello there! </span> <br />
             <span className="regular info_txt">
-              I am known as Zlaam. A dedicated and skilled FullStack-web App
+              I am known as Zlaam, A dedicated and skilled FullStack-web App
               developer with a several Years of hands-on experience. My true
               passion lies in transforming concepts into tangible digital
               solutions, and I wholeheartedly embrace new challenges that come
