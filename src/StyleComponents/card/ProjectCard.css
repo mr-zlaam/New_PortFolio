@@ -85,8 +85,9 @@
   width: fit-content;
   margin: auto;
   position: absolute;
-  bottom: 1rem;
-  left: 6rem;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn_div > .btns {
   border: 2px solid white;
@@ -129,9 +130,6 @@
   }
 }
 @media screen and (max-width: 446px) {
-  .btn_div {
-    left: 4.5rem;
-  }
   .resume .resume_txt {
     font-size: 1rem;
   }
@@ -171,7 +169,6 @@
     height: 0px;
     width: 100px;
     bottom: 2rem;
-    left: 3rem;
   }
   .carddescription {
     font-size: 12px;
